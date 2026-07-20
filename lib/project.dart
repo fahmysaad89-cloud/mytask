@@ -1,3 +1,5 @@
+import 'dart:vmservice_io';
+
 void main() {
   //Q1:
 
@@ -63,4 +65,31 @@ void main() {
   print("Biggest number is: $max");
 
   // Q6
+
+  int i = 0;
+
+  while (i < 10) {
+    print("hello");
+
+    i++;
+  }
+
+  // Q7
+
+  List<String> students = ["saad", "ali", "sara", "mariam"];
+
+  for (int i = 0; i < students.length; i++) {
+    switch (i) {
+      case 0:
+        print("First student: ${students[i]}");
+      case 1:
+        print("second student: ${students[i]}");
+      case 2:
+        print("Third student: ${students[i]}");
+      case 3:
+        print("four student: ${students[i]}");
+      default:
+        print("Student ${i + 1}: ${students[i]}");
+    }
+  }
 }

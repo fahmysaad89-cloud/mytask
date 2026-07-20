@@ -17,4 +17,15 @@ void main() {
   for (int i = 0; i < favFood.length; i++) {
     print(favFood[i]);
   }
+
+  // Q3
+
+  List<int> number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  List<int> even = [];
+
+  even = number.where((x) {
+    return x.isEven;
+  }).toList();
+
+  print(even);
 }

@@ -31,7 +31,7 @@ void main() {
 
   // Q4
 
-  int day = 11;
+  int day = 5;
 
   switch (day) {
     case 1:
@@ -51,4 +51,16 @@ void main() {
     default:
       print("Invalid day");
   }
+
+  // Q5
+
+  List<int> numbers = [11, 98, 35, 89, 74];
+
+  numbers.sort();
+
+  int max = numbers.last;
+
+  print("Biggest number is: $max");
+
+  // Q6
 }

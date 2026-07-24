@@ -65,4 +65,26 @@ void main() {
     total += product['price'] as int;
   }
   print("total price = $total");
+
+  // Q Bonus:
+
+  List<Map<String, dynamic>> Products = [
+    {'name': 'Book', 'price': 40, 'qty': 2},
+    {'name': 'Pen', 'price': 5, 'qty': 10},
+    {'name': 'Bag', 'price': 120, 'qty': 1},
+  ];
+
+  int totalCost = 0;
+  int maxCost = 0;
+  String maxItem = "";
+  for (var prodact in Products) {
+    int cost = prodact["price"] * prodact["qty"];
+    totalCost += cost;
+    if (cost > maxCost) {
+      maxCost = cost;
+      maxItem = prodact['name'];
+    }
+  }
+  print("total cost = $totalCost");
+  print("Highest item = $maxItem");
 }
